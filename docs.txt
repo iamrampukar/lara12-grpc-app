@@ -1,0 +1,35 @@
+[gRPC official website]
+-- https://grpc.io
+
+[download link]
+-- https://pecl.php.net/package/grpc
+-- select/click DLL (icon)
+-- 8.2 Thread Safe (TS) x64 (your local machine compatible)
+    extract and unzip folder
+    -- paste on 'DLL' file inside (.\wampserver64\bin\php\php8.2.13\ext) folder
+    -- add/enable inside file (.\wampserver64\bin\apache\apache2.4.58\bin\php.ini)
+       extension=grpc
+
+[download protoc exe file and config env path in your local machine]
+    Url: https://github.com/protocolbuffers/protobuf/releases [assets]
+        -- protoc-28.3-win64.zip
+        config env path eg.
+        -- D:\wampserver64\www\yig2023\yonefu-io\protoc-29.3\bin
+
+[How Config Laravel Project setup gRPC]
+-- You have create/existing laravel 12 api project.
+
+[Install google protobuf]
+    Url: https://packagist.org/packages/google/protobuf
+    -- composer require google/protobuf
+
+[create/make 'protoc' directive in root folder]
+- protoc
+    application.proto
+    gen-proto.sh
+
+[go to protoc inside 'folder' run git bash cli window]
+-- ./gen-proto.sh
+
+
+
