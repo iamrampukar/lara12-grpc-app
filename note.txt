@@ -1,0 +1,3 @@
+[API CLI]
+-- php artisan install:api
+
